@@ -20,24 +20,28 @@ section p
 	justify-content: justify;
 }
 /*header*/
+header
+{
+	padding: 50px 0 50px 0;
+}
 #titre_principal
 {
+	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2.3em;
+	font-size: 2em;
 	display: flex;
 }
 #prenom
 {
 	color: #FECA07;
-	font-weight: bold;
 }
 #nom
 {
 	font-weight: lighter;
 }
-header h1
+#sous_titre
 {
-	font-weight: lighter;
+	border-bottom: 1px solid #FECA07;
 }
 /*section*/
 section
@@ -47,7 +51,7 @@ section
 #bloc_1
 {
 	background-color: #FECA07;
-	width: 400px;
+	width: 350px;
 }
 #bloc_1 p 
 {
@@ -56,11 +60,11 @@ section
 .photo
 {
 	display: block;
-	margin: auto;
-	padding-top: 25px;
-	border-radius: 100%;
-	max-width: 50%;
-	height: auto;
+	margin: 50px auto 30px;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	border: 2px solid #404040;
 
 }
 .titre_bloc_1
@@ -76,7 +80,14 @@ section
 }
 .titre_bloc_2
 {
+	display: flex;
 	color: black;
-	border-bottom: 1.5px solid #FECA07 ;
-	padding-bottom: 8px;
+	border-bottom: 1px solid #FECA07 ;
+    flex-direction: row;
+    align-items: baseline;
+}
+.icone
+{
+	color: #FECA07;
+	margin-right: 20px;
 }
