@@ -1,3 +1,5 @@
+/*information général*/
+
 body
 {
 	font-family: 'trebuchet MS', Arial, sans-serif;
@@ -15,11 +17,8 @@ h1, h2, h3, h4
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
 }
-section p
-{
-	justify-content: justify;
-}
 /*header*/
+
 header
 {
 	padding: 50px 0 50px 0;
@@ -44,10 +43,13 @@ header
 	border-bottom: 1px solid #FECA07;
 }
 /*section*/
+
 section
 {
 	display: flex;
 }
+/*bloc_1_gauche*/
+
 #bloc_1
 {
 	background-color: #FECA07;
@@ -74,6 +76,8 @@ section
 	font-weight: lighter;
 	text-align: center;
 }
+/*bloc_2_droite*/
+
 #bloc_2
 {
 	padding: 25px;
@@ -90,4 +94,27 @@ section
 {
 	color: #FECA07;
 	margin-right: 20px;
+}
+.rond
+{
+	color: #FECA07; 
+	font-size: 0.5em;
+}
+span
+{
+	font-size: 0.7em;
+}
+.bloc_2_texte
+{
+	width: 250px;
+	padding-left: 20px;
+}
+.bloc_texte
+{	
+	display: flex;
+	flex-wrap: wrap;
+}
+div ul
+{
+	list-style: none;
 }
