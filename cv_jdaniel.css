@@ -3,7 +3,7 @@
 body
 {
 	font-family: 'trebuchet MS', Arial, sans-serif;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color: #404040;
 }
 #bloc_page
@@ -23,29 +23,30 @@ header
 {
 	margin: 50px 0 50px 0;
 }
-.petit_ecran
+.en_tete_petit_ecran
 {
 	display: none;
 }
-#titre_principal
+.titre_principal
 {
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
 	display: flex;
+
 }
-#prenom
+.prenom
 {
 	color: #FECA07;
 }
-#nom
+.nom
 {
 	font-weight: lighter;
 }
 .sous_ligne
 {
 	border-bottom:#FECA07 1.5px solid;
-	width: 60px;
+	width: 50px;
 }
 /*section*/
 
@@ -77,10 +78,24 @@ section
 }
 .titre_bloc_1
 {
-	background-color: #404040; 
+	background-color: #404040;
+	padding: 6px; 
 	color: #FECA07;
 	font-weight: lighter;
 	text-align: center;
+}
+#loisirs
+{
+	margin-top: 350px;
+}
+#icones_loisirs
+{
+	display: flex;
+	justify-content: space-around;
+}
+.icone_loisirs
+{
+	font-size: 50px;
 }
 /*bloc_2_droite*/
 
@@ -120,10 +135,7 @@ span
 	display: flex;
 	flex-wrap: wrap;
 }
-div ul
-{
-	list-style: none;
-}
+
 /*responsive*/
 
 @media only screen and (max-width: 1024px)
@@ -133,21 +145,36 @@ div ul
 		width: auto;
 		margin: auto;
 	}
-	.petit_ecran
+	.en_tete_petit_ecran
 	{
-		display: block;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		margin: 0px;
 	}
-	.grand_ecran
+	.titre_principal
+	{
+		margin-top: 100px;
+	}
+	.en_tete_grand_ecran
+	{
+		display: none;
+	}
+	#jo_photo_grand_ecran
 	{
 		display: none;
 	}
 	section
 	{
-		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+	#loisirs
+	{
+		margin-top: 0px;
 	}
 	#bloc_1
 	{
-		background-color: white;
 		width: auto;
 	}
 	#bloc_2
